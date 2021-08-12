@@ -2,10 +2,12 @@
 node_modules
 /dist
 
-
 # local env files
 .env.local
 .env.*.local
+
+# apollo config
+apollo.config.js
 
 # Log files
 npm-debug.log*
