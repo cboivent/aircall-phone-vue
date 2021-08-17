@@ -1,0 +1,110 @@
+button.ac-button {
+  background-color: white;
+  border: 1px solid $secondary-color;
+  border-radius: 60px;
+  color: $secondary-color;
+  display: inline-flex;
+  line-height: 2em;
+  margin: 5px;
+  padding: 4px 16px;
+  text-align: center;
+  white-space: nowrap;
+
+  &:hover:not(:disabled) {
+    background-color: $secondary-color;
+    color: white;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: $neutral-color;
+    border-color: $neutral-color-dark;
+    color: $neutral-color-dark;
+
+    &:hover {
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: white;
+    
+    &:hover {
+      background-color: $primary-color-dark;
+      border: 1px solid $primary-color-dark;
+      text-decoration: none;
+    }
+    
+    &:disabled {
+      background-color: $neutral-color;
+      border: 1px solid $neutral-color;
+    }
+  }
+
+  &.link {
+    border: 0;
+    
+    &:hover {
+      background-color: transparent;
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+
+  &.simple {
+    background-color: white;
+    border: 1px solid $secondary-color-dark;
+    border-radius: 0;
+    color: $secondary-color-dark;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: white;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    &:disabled {
+      background-color: $neutral-color-lighter;
+      border: 1px solid $neutral-color-lighter;
+      color: $neutral-color !important;
+    }
+  }
+}
+
+input {
+  border: 1px solid #dadadd;
+  border-radius: $border-radius-default;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 15px 0 10px;
+  padding: 5px 12px;
+  width: 100%;
+}
+
+label {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.badge {
+  background-color: $warning-color;
+  border-radius: 25px;
+  color: white;
+  display: inline-flex;
+  font-size: 0.75em;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  width: 38px;
+}
